@@ -34,6 +34,7 @@ export default function Dictionary() {
           Search
         </button>
       </form>
+
       <Results results={results} />
     </div>
   );

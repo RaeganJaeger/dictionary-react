@@ -5,7 +5,9 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>Dictionary App</h1>
+        <h1>
+          Dictionary.<span className="random-word">Groovy</span>
+        </h1>
         <main>
           <Dictionary />
         </main>
