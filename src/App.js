@@ -12,7 +12,7 @@ function App() {
         <p className="footer">
           Opensource code by{" "}
           <a
-            href="https://github.com/RaeganJaeger/weather-react"
+            href="https://github.com/RaeganJaeger/dictionary-react"
             target="_blank"
             rel="noopener noreferrer"
           >
