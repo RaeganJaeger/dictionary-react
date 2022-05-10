@@ -13,7 +13,7 @@
   font-size: 1.25rem;
 }
 
-.Dictionary button {
+.Dictionary input.search {
   border-radius: 5px;
   margin: 0 auto;
   color: #fff;
@@ -24,7 +24,7 @@
   text-align: center;
 }
 
-.Dictionary button:hover {
+.Dictionary input.search:hover {
   color: #000;
   background-color: #fff;
   font-weight: bolder;

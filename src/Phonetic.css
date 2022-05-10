@@ -1,0 +1,5 @@
+.Phonetic li {
+  display: inline-block;
+  margin-right: -4px;
+  padding: 0px 20px;
+}

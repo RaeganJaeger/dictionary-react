@@ -9,7 +9,7 @@ function App() {
           Dictionary.<span className="random-word">Groovy</span>
         </h1>
         <main>
-          <Dictionary />
+          <Dictionary defaultKeyword="groovy" />
         </main>
         <p className="footer">
           Opensource code by{" "}
