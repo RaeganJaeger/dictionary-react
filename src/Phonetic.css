@@ -1,5 +1,27 @@
+.Phonetic {
+  margin: 10px 0;
+}
+.Phonetic ul {
+  list-style: none;
+  margin: 0;
+}
+
 .Phonetic li {
   display: inline-block;
   margin-right: -4px;
-  padding: 0px 20px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.Phonetic a {
+  border: 1px solid #ddd;
+  color: #bf4517;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.Phonetic a:hover {
+  background: #bf4517;
+  color: #fff;
 }

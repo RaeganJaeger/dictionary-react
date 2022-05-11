@@ -14,20 +14,12 @@ export default function Meaning(props) {
             <h3>{props.meaning.partOfSpeech}</h3>
           </Accordion.Header>
           <Accordion.Body>
-            <ul>
-              <li>
-                <Synonyms synonyms={props.meaning.synonyms} />
-              </li>
-            </ul>
+            <Synonyms synonyms={props.meaning.synonyms} />
             {props.meaning.definitions.map(function (definition, index) {
               return (
                 <div key={index}>
-                  <div>
-                    Definition: {definition.definition}
-                    <br />
-                    Example: <em>{definition.example}</em>
-                    <br />
-                  </div>
+                  <div className="definition">{definition.definition}</div>
+                  <div className="example">{definition.example}</div>
                   <hr />
                 </div>
               );
