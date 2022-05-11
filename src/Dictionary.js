@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import "./Dictionary.css";
 
 export default function Dictionary(props) {
@@ -45,9 +47,10 @@ export default function Dictionary(props) {
             onChange={handleKeywordChange}
             defaultValue={props.defaultKeyword}
           />{" "}
-          <input className="search" type="button" value="Search" />
+          <button className="search" type="button">
+            <FontAwesomeIcon icon={faCoffee} />
+          </button>
         </form>
-
         <Results results={results} />
       </div>
     );
