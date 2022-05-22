@@ -1,0 +1,9 @@
+.Results .header-definition {
+  display: inline;
+}
+
+.Results p.quick-definition {
+  display: inline;
+  font-size: 14px;
+  line-height: 1.5;
+}

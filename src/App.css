@@ -5,8 +5,14 @@
 }
 
 .App h1 {
-  font-size: 3rem;
+  font-size: 8vw;
   padding-bottom: 20px;
+}
+
+.App .random-word {
+  font-family: "Varela Round", Sans-Serif;
+  font-weight: bolder;
+  font-style: italic;
 }
 
 .App.container {

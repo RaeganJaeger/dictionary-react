@@ -3,7 +3,7 @@ import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "./Dictionary.css";
 
 export default function Dictionary(props) {
@@ -31,7 +31,7 @@ export default function Dictionary(props) {
 
     let pexelsApiKey =
       "563492ad6f9170000100000175fb5ff5e8904ab9a1864d281fe70c4e";
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=5`;
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
     let headers = { Authorization: `Bearer ${pexelsApiKey}` };
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
@@ -61,7 +61,7 @@ export default function Dictionary(props) {
             defaultValue={props.defaultKeyword}
           />{" "}
           <button className="search" type="button">
-            <FontAwesomeIcon icon={faCoffee} />
+            <FontAwesomeIcon icon={faSearch} size="lg" />
           </button>
         </form>
         <Results results={results} />
