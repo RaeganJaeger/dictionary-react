@@ -64,6 +64,7 @@ export default function Dictionary(props) {
             <FontAwesomeIcon icon={faSearch} size="lg" />
           </button>
         </form>
+        <hr />
         <Results results={results} />
         <Photos photos={photos} />
       </div>
