@@ -13,13 +13,15 @@ export default function Results(props) {
           <p className="quick-definition">
             {props.results.meanings[0].definitions[0].definition.toLowerCase()}
           </p>
-          {props.results.phonetics.map(function (phonetic, index) {
-            return (
-              <div key={index}>
-                <Phonetic phonetic={phonetic} />
-              </div>
-            );
-          })}
+          <div className="row">
+            {props.results.phonetics.map(function (phonetic, index) {
+              return (
+                <div key={index} className="col">
+                  <Phonetic phonetic={phonetic} />
+                </div>
+              );
+            })}
+          </div>
         </section>
         {props.results.meanings.map(function (meaning, index) {
           return (

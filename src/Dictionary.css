@@ -2,20 +2,20 @@
   background-color: gray;
   border-radius: 5px;
   padding: 25px;
-  margin: 20px auto;
+  margin: 0 auto;
   background-color: #f2f2f4;
 }
-
 .Dictionary h2.question {
-  font-size: 3vw;
+  font-size: small;
 }
 
-.Dictionary form {
-  display: inline;
+form {
+  line-height: normal;
+  margin-bottom: 30px;
 }
 
 .Dictionary input {
-  padding: 5px 10px;
+  padding: 8px 10px;
   font-size: 1.25em;
   border-radius: 5px;
   margin: 0 auto;
@@ -23,9 +23,11 @@
 }
 
 .Dictionary button.search {
-  padding: 8px 10px;
+  padding: 11px 10px 9px 10px;
+  line-height: normal;
   border-radius: 5px;
   margin: 0 auto;
+  margin-left: 5px;
   border: 1px solid #000;
   color: #fff;
   background-color: #000;

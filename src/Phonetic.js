@@ -1,4 +1,5 @@
 import React from "react";
+import Audio from "./Audio";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlayCircle } from "@fortawesome/free-solid-svg-icons";
 import "./Phonetic.css";
@@ -6,12 +7,17 @@ import "./Phonetic.css";
 export default function Phonetic(props) {
   return (
     <div className="Phonetic">
-      <li>
-        <a href={props.phonetic.audio} target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faPlayCircle} />
-        </a>
-      </li>
-      <li>{props.phonetic.text}</li>
+      <ul>
+        <li>
+          <a href={props.phonetic.audio} target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faPlayCircle} size="lg" />
+          </a>
+        </li>
+        <li>
+          <Audio />
+        </li>
+        <li>{props.phonetic.text}</li>
+      </ul>
     </div>
   );
 }

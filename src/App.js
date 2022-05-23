@@ -2,14 +2,36 @@ import "./App.css";
 import Dictionary from "./Dictionary";
 
 function App() {
+  var words = [
+    "rainbow",
+    "groovy",
+    "goat",
+    "justice",
+    "art",
+    "sunset",
+    "lilac",
+    "curiousity",
+    "frog",
+    "moss",
+    "yam",
+    "bees",
+    "mullet",
+    "sequoia",
+    "radish",
+    "ponder",
+    "inspire",
+    "discover",
+  ];
+  var randomWords = words[Math.floor(Math.random() * words.length)];
+
   return (
     <div className="App">
       <div className="container">
         <h1>
-          Dictionary.<span className="random-word">Groovy</span>
+          Dictionary.<span className="random-word">{randomWords}</span>
         </h1>
         <main>
-          <Dictionary defaultKeyword="groovy" />
+          <Dictionary defaultKeyword={randomWords} />
         </main>
         <p className="footer">
           Opensource code by{" "}
