@@ -22,6 +22,7 @@ function App() {
     "ponder",
     "inspire",
     "discover",
+    "goose",
   ];
   var randomWords = words[Math.floor(Math.random() * words.length)];
 
