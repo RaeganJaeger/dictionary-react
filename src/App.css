@@ -51,3 +51,11 @@
 .App .footer a:hover::before {
   transform: scaleX(1);
 }
+
+@media (max-width: 500px) {
+  .App {
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 30px;
+  }
+}
