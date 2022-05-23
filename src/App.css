@@ -2,12 +2,15 @@
   margin: 0 auto;
   padding: 40px;
   max-width: 960px;
+  padding-top: 50px;
 }
 
 .App .random-word {
   font-family: "Varela Round", Sans-Serif;
   font-weight: bolder;
   text-transform: uppercase;
+  color: #698474;
+  letter-spacing: 0.05em;
 }
 
 .App.container {
